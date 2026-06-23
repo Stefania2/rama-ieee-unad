@@ -183,6 +183,20 @@
   .btn-primary{background:var(--ink);color:#fff;}
   .btn-primary:hover{box-shadow:0 8px 20px rgba(15,44,89,.25);}
   .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);}
+  .btn-login{
+    font-family:var(--body-f);
+    font-weight:600;
+    font-size:.78rem;
+    padding:8px 18px;
+    border-radius:8px;
+    border:1.5px solid var(--ieee);
+    background:var(--ieee);
+    color:#fff;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:all .2s;
+  }
+  .btn-login:hover{background:var(--ink);border-color:var(--ink);}
 
   /* ---------- SECTION HEADERS ---------- */
   section{padding:64px 0;}
@@ -399,12 +413,15 @@
         <span class="tag" data-es="Rama Estudiantil" data-en="Student Branch">Rama Estudiantil</span>
       </div>
     </div>
-    <div class="lang-switch">
-      <span class="lbl" id="lbl-es">ES</span>
-      <button class="rocker" id="langToggle" aria-pressed="false" aria-label="Cambiar idioma / Switch language">
-        <span class="knob"></span>
-      </button>
-      <span class="lbl" id="lbl-en">EN</span>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a class="btn-login" href="https://ieee-unad-project-hub.vercel.app" target="_blank" data-es="Acceder al Hub" data-en="Go to Hub">Acceder al Hub</a>
+      <div class="lang-switch">
+        <span class="lbl" id="lbl-es">ES</span>
+        <button class="rocker" id="langToggle" aria-pressed="false" aria-label="Cambiar idioma / Switch language">
+          <span class="knob"></span>
+        </button>
+        <span class="lbl" id="lbl-en">EN</span>
+      </div>
     </div>
   </div>
 </header>
@@ -443,6 +460,7 @@
     <div class="hero-ctas">
       <a class="btn btn-primary" href="#capitulos" data-es="Ver capítulos" data-en="See chapters">Ver capítulos</a>
       <a class="btn btn-ghost" href="#contacto" data-es="Contáctanos" data-en="Contact us">Contáctanos</a>
+      <a class="btn btn-primary" href="https://ieee-unad-project-hub.vercel.app" target="_blank" data-es="Ingresar al Hub" data-en="Enter the Hub"> Ingresar al Hub</a>
     </div>
   </div>
 </section>
